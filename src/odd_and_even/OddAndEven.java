@@ -1,30 +1,38 @@
 package odd_and_even;
 
 public class OddAndEven {
+    /*
+    Write a method that can identify a given number is even or odd.
+EX:
+       identify(5) --> "Odd"
+       identify(6) --> "Even"
+     */
+
     public static void main(String[] args) {
 
+        //First way
+        System.out.println("identify(5) = " + identify(5));
+        System.out.println("identify(6) = " + identify(6));
 
-        boolean result = isOdd(100);
+        System.out.println("*****************");
+
+        //Second way
+        String result = identify(5);
         System.out.println("result = " + result);
-
-
-        boolean result2 = isEven(100);
+        String result2 = identify(6);
         System.out.println("result2 = " + result2);
-    }
 
-    public static boolean isOdd(int a){
-        return a%2 ==1;
     }
 
 
-    public static boolean isEven(int a){
-        if (a%2 ==0){
-            return true;
-        } else {
-            return false;
-        }
-    }
+    /**
+     * Checks if the given number odd or even
+     */
+    public static String identify(int number) {
 
+        return number % 2 == 0 ? "Even" : "Odd";
+
+    }
 
 
 }
