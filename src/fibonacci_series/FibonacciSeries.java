@@ -12,7 +12,7 @@ public class FibonacciSeries {
 
 
     /**
-     * A custom method for Fibonacci series calculating
+     * A custom method for Fibonacci sequence calculating
      * @param number
      * @return sum
      */
