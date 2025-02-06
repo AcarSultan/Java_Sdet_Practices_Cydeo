@@ -13,13 +13,26 @@ public class LeapYear {
          */
 
 
-        int year= 2024;
-
-        boolean isLeapYear = (year%4==0 && year%100 !=0) || (year%400==0);
-
-        System.out.println("Is " + year + " a leap year? " + isLeapYear);
-
-
+        System.out.println(calculatingLeapYear(2025));
+        System.out.println(calculatingLeapYear(1988));
+        System.out.println(calculatingLeapYear(1853));
 
     }
+
+    /**
+     * a custom method for calculating the leap year
+     * @param number
+     * @return ("Is " + number + " a leap year? " + "\n" + isLeapYear)
+     */
+    public static String calculatingLeapYear(long number){
+
+        boolean isLeapYear = (number%4==0 && number%100 !=0) || (number%400==0);
+
+        return ("Is " + number + " a leap year? " + "\n" + isLeapYear);
+
+    }
+
+
+
+
 }
