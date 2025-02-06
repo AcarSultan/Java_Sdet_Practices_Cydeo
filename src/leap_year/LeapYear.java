@@ -21,7 +21,7 @@ public class LeapYear {
 
     /**
      * a custom method for calculating the leap year
-     * @param number
+     * @param number long
      * @return ("Is " + number + " a leap year? " + "\n" + isLeapYear)
      */
     public static String calculatingLeapYear(long number){
