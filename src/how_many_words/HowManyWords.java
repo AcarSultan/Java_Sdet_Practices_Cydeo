@@ -6,7 +6,9 @@ public class HowManyWords {
 
     public static void main(String[] args) {
 
-        String str="In computer programming, white space refers to any character or sequence of characters that " + "represent empty space or have no visible representation when rendered.";
+        String str="In computer programming, white space refers to any " +
+                "character or sequence of characters that " + "represent " +
+                "empty space or have no visible representation when rendered.";
 
         String[] words= str.split(" ");
 

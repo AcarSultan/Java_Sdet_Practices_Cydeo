@@ -5,16 +5,22 @@ import java.util.Scanner;
 public class MilesToKm {
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter the miles: ");
+        System.out.println(calculatingMilesToKilometer(5));
 
-        double miles = input.nextDouble();
+    }
+
+    /**
+     * A custom method for calculating miles to kilometer
+     * @param miles double
+     * @return (miles + " miles is equal to " + km + " kilometers.")
+     */
+    public static String calculatingMilesToKilometer(double miles) {
+
+        System.out.println("Miles to kilometers calculating..");
+
         // 1 miles = 1.609344 km
-
         double km = miles * 1.609344;
-
-        System.out.println(miles + " miles is equal to " + km + " kilometers.");
-
+        return (miles + " miles is equal to " + km + " kilometers.");
 
     }
 }
