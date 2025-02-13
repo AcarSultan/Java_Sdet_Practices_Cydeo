@@ -25,8 +25,8 @@ public class WithoutFirstChar {
 
     /**
      * A String method for removing first characters
-     * @param str1
-     * @param str2
+     * @param str1 String
+     * @param str2 String
      * @return (str1+ "" +str2)
      */
     public static String removingFirstChars(String str1, String str2){
@@ -34,7 +34,7 @@ public class WithoutFirstChar {
         str1= str1.substring(1);
         str2= str2.substring(1);
 
-        return (str1+ "" +str2);
+        return (str1+ " " +str2);
 
     }
 
