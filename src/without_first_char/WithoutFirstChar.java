@@ -16,12 +16,29 @@ public class WithoutFirstChar {
         System.out.println("Please enter the second word: ");
         String secondWord= scanner.next();
 
+        System.out.println(removingFirstChars(firstWord, secondWord));
         scanner.close();
 
-        firstWord= firstWord.substring(1);
-        secondWord= secondWord.substring(1);
 
-        System.out.println(firstWord+secondWord);
 
     }
+
+    /**
+     * A String method for removing first characters
+     * @param str1
+     * @param str2
+     * @return (str1+ "" +str2)
+     */
+    public static String removingFirstChars(String str1, String str2){
+
+        str1= str1.substring(1);
+        str2= str2.substring(1);
+
+        return (str1+ "" +str2);
+
+    }
+
+
+
+
 }
