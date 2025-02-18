@@ -25,6 +25,11 @@ public class EmailTask {
 
     }
 
+    /**
+     * A custom void method for checking entered mail address
+     *
+     * @param email String
+     */
     public static void checkingEmailAddress(String email){
 
         int underscore = email.indexOf("_");
