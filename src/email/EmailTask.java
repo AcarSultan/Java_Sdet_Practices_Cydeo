@@ -21,6 +21,12 @@ public class EmailTask {
         String email= scanner.nextLine();
         scanner.close();
 
+        checkingEmailAddress(email);
+
+    }
+
+    public static void checkingEmailAddress(String email){
+
         int underscore = email.indexOf("_");
 
         if (underscore>0){
@@ -31,11 +37,10 @@ public class EmailTask {
             System.out.println(lastName + "_" + firstName + email.substring(at));
 
         } else{
-            System.out.println(email);
+            System.out.println("Please use an UNDERSCORE between your first name and last name!");
         }
 
     }
-
 
 
 
