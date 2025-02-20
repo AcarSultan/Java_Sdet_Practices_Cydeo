@@ -12,6 +12,17 @@ public class GradeReport {
         int score = input.nextInt();
         input.close();
 
+        reportingGrade(score);
+
+    }
+
+
+    /**
+     * A void method for determine the given grades
+     * @param score int
+     */
+    public static void reportingGrade(int score){
+
         if (score<=100 && score>=90){
             System.out.println("Your grade is A");
         } else if (score<90 && score>=80) {
@@ -27,9 +38,7 @@ public class GradeReport {
         } else {
             System.out.println("Invalid Score.");
         }
-
-
-
     }
+
 
 }
